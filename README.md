@@ -29,7 +29,7 @@ You don't need Javascript for a blog. You just need an RSS feed, and big font si
 
 After navigating to your site's root directory, run the below command.
 
-```git submodule add [https://github.com/leonstafford/accessible-minimalism-hugo-theme](https://github.com/rkingett/accessible-writer) themes/accessible-writer```
+```git submodule add https://github.com/rkingett/accessible-writer themes/accessible-writer```
 
 Alternatively,
 
@@ -43,8 +43,6 @@ Alternatively,
 After doing the above,
 
 Copy the `config.toml` file from the exampleSite directory inside this repository to your site root:
-
-```cp themes/accessible-minimalism/exampleSite/config.toml .```
 
 ## Configuration
 
