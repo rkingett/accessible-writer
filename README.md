@@ -1,48 +1,50 @@
-# Accessible Minimalism Hugo Theme
+# Accessible writer theme.
 
-Minimalist Hugo theme with a penchant for accessibility 
+This is a theme designed to be accessible, and very minimalist. Not much will be added to this theme with regards to features, so feel free to fork this and add onto it. The goal is to have this theme be very accessible with less features. No tracking support, no comments support, no nothing!
 
-[Demo site](https://accessible-minimalism.netlify.app)
+Until I can get my own demo site to work, view the [Demo site](https://accessible-minimalism.netlify.app)
 
 ## Project aims
 
- - XHTML 1.0 Strict valid and HTML 5 friendly code
- - minimal bloat in the generated markup
- - focus on accessibility
-   - semantic, minimal markup for screen readers
-   - minimal added CSS for partially sighted users
-   - easy to read source code
+Some things from the original project will stay the same, such as,
+
+- XHTML 1.0 Strict valid and HTML 5 friendly code
+- minimal bloat in the generated markup
+- focus on accessibilityy
+- - semantic, minimal markup for screen readers
+- minimal added CSS for partially sighted users
+- easy to read source code
    - minimal config required to get started and use in Hugo
- - RSS subscription support
- - favors fully-blind users over partially or fully sighted users
- - mobile-last development 
+- RSS subscription support
+- favors fully-blind users over partially or fully sighted users
+- mobile-last development because there are other people better than me that can do this better.
 
 ## Who is this for?
 
-This aims at users who care more about content and inclusivity than dancing baby
- GIFs or whatever the 2020 equivalent is.
+This theme will be for bloggers and writers that want an accessible and easy to use theme, with large fonts, minimal CSS, and nothing else. If you want features like tracking and comments and similar,, this is not the theme for you.
 
-The early web was great for content, unburdened by MBs of JavaScript or CSS.
- RSS feeds allowed users to pull your content on demand vs being forced into
- giving you space in their precious inbox or following your social-ills.
+You don't need Javascript for a blog. You just need an RSS feed, and big font size on a high contrast background.
 
 ## Getting started
 
+After navigating to your site's root directory, run the below command.
+
+```git submodule add [https://github.com/leonstafford/accessible-minimalism-hugo-theme](https://github.com/rkingett/accessible-writer) themes/accessible-writer```
+
+Alternatively,
+
 1. In your Hugo site's root, clone this repo to your `themes` dir:
 
-`git clone --depth 1 https://github.com/leonstafford/accessible-minimalism-hugo-theme themes/accessible-minimalism`
-
-It may be preferable to use git's submodule functionality to keep the theme
- within your website's repository. To do this, use:
-
-`git submodule add https://github.com/leonstafford/accessible-minimalism-hugo-theme themes/accessible-minimalism`
+```git clone --depth 1 [https://github.com/leonstafford/accessible-minimalism-hugo-theme](https://github.com/rkingett/accessible-writer) themes/accessible-minimalism```
 
 *Using the https remote URI will make deployment of your website via some CI/CD,
  such as Netlify, easier.*
 
-2. Copy the `config.toml` file from the exampleSite directory inside this repository to your site root:
+After doing the above,
 
-`cp themes/accessible-minimalism/exampleSite/config.toml .`
+Copy the `config.toml` file from the exampleSite directory inside this repository to your site root:
+
+```cp themes/accessible-minimalism/exampleSite/config.toml .```
 
 ## Configuration
 
@@ -55,30 +57,14 @@ The main things you may want to adjust when using this theme are your content
 
 ## Development decisions
 
- - skip redundancy such as anchor's `title` attributes
- - default browser colors are high contrast enough
+- skip redundancy such as anchor's `title` attributes
+- Font is larger by default.
+- - default browser colors are high contrast enough
 
-## Screenshot
+## Roadmap.
 
-[![Screenshot](https://github.com/leonstafford/accessible-minimalism-hugo-theme/blob/master/images/screenshot.png?cb=1234)](https://github.com/leonstafford/accessible-minimalism-hugo-theme/blob/master/images/screenshot.png)
-
-## Testing
-
- - check theme against [w3c validator](https://validator.w3.org)
- - check using `content` dir from [hugoBasicExample](https://github.com/gohugoio/hugoBasicExample)
- - check using `content` dir from `exampleSite` in this repo
- - check navigation and content in `lynx(1)` browser
- - check navigation and content in screen reader(s)
- - test accessibility in sites like:
-   - [wave](https://wave.webaim.org/report#/https://accessible-minimalism.netlify.app)
-   - [achecked](https://achecker.ca)
-
-## Roadmap
-
- - theme options / config help for enabling footer links to email, RSS, socials
- - scriptless search (GET submission to engine + index generation)
- - multilingual site support (includine Hugo's sitemapindex)
+There is none. I plan to edit the CSS and add things like RSS links for category pages and tag pages but nothing beyond that.
 
 ### License
 
-[The Unlicense](https://unlicense.org) - do whatever you like with this code.
+[The Unlicense](https://unlicense.org) - do whatever you like with this code..
