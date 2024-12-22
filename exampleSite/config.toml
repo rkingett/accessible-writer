@@ -1,9 +1,13 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "Accessible Minimalism"
+title = "Website Name"
 theme = "accessible-minimalism"
 disableHugoGeneratorInject = true
 enableRobotsTXT = true
+
+[module]
+  [[module.imports]]
+    path = "github.com/rkingett/accessible-writer"
 
 [menu]
   [[menu.main]]

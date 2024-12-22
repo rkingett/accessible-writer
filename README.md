@@ -10,11 +10,11 @@ Some things from the original project will stay the same, such as,
 
 - XHTML 1.0 Strict valid and HTML 5 friendly code
 - minimal bloat in the generated markup
-- focus on accessibilityy
+- focus on accessibility
 - - semantic, minimal markup for screen readers
 - minimal added CSS for partially sighted users
 - easy to read source code
-   - minimal config required to get started and use in Hugo
+- minimal config required to get started and use in Hugo
 - RSS subscription support
 - favors fully-blind users over partially or fully sighted users
 - mobile-last development because there are other people better than me that can do this better.
@@ -27,22 +27,36 @@ You don't need Javascript for a blog. You just need an RSS feed, and big font si
 
 ## Getting started
 
+The easiest way is to use a Hugo moduele.
+
+```
+[module]
+  [[module.imports]]
+    path = "github.com/rkingett/accessible-writer"
+```
+
+Or, you can use git.
+
 After navigating to your site's root directory, run the below command.
 
-```git submodule add https://github.com/rkingett/accessible-writer themes/accessible-writer```
+```
+git submodule add https://github.com/rkingett/accessible-writer themes/accessible-writer
+```
 
 Alternatively,
 
 1. In your Hugo site's root, clone this repo to your `themes` dir:
 
-```git clone --depth 1 [https://github.com/leonstafford/accessible-minimalism-hugo-theme](https://github.com/rkingett/accessible-writer) themes/accessible-minimalism```
+```
+git clone --depth 1 https://github.com/rkingett/accessible-writer themes/accessible-writer
+```
 
 *Using the https remote URI will make deployment of your website via some CI/CD,
  such as Netlify, easier.*
 
 After doing the above,
 
-Copy the `config.toml` file from the exampleSite directory inside this repository to your site root:
+Copy the `config.toml` file from the exampleSite directory inside this repository to your site root. If you are using a modual, be sure to remove the, theme = in your Config file.
 
 ## Configuration
 
